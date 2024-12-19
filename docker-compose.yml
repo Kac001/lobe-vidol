@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    build: . # 从 Dockerfile 构建
+    container_name: lobe-vidol
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
